@@ -1,0 +1,102 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.post-card{
+    padding: 2rem;
+    header.post-card--header{
+        // border: 1px solid red;
+        padding: 0;
+        margin-bottom: 2rem;
+        .identity{
+            gap: 1.5rem;
+            // border: 1px solid black;
+            .profile-picture{
+                height: 5rem;
+                width: 5rem;
+                border-radius: 100%;
+                background-color: $color-grey-dark;
+            }
+            .profile-info{
+                gap: 1rem;
+                &-name{
+                    .username{
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        margin-right: 2rem;
+                    }
+                    .post-title{
+                        text-transform: capitalize;
+                        color: $color-grey;
+                    }
+                }
+                & .time{
+                    color: $color-primary;
+                    // word-spacing: .5rem;
+                }
+            }
+        }
+        & .action{
+            letter-spacing: .3rem;
+            cursor: pointer;
+            font-weight: bolder;
+            // margin-right: 4rem;
+            // border: 1px solid blue;
+        }
+    }
+    &-text{
+        line-height: 1.7;
+        color: lighten($color-grey, 10%);
+    }
+    &-content{
+        padding-bottom: 2rem;
+        border-bottom: .001rem solid lighten($color-grey, 25%);
+        &--image{
+            height: 40rem;
+            width: 100%;
+            border-radius: .8rem;
+            overflow: hidden;
+            margin: 2.5rem 0rem;
+            background-color: $color-grey-dark;
+        }
+        &--actions{
+            align-items: center;
+            color: $color-grey;
+            text-transform: capitalize;
+            gap: 2.5rem;
+
+            & .likes{
+
+            }
+            & .comment{
+                margin-right: auto;
+            }
+            & .share{
+                
+            }
+        }
+    }
+    .comment-message{
+        margin: 3rem 0 1rem 0rem;
+        input.comment-message-text{
+            border: .1px solid $color-primary;
+            padding: 1rem;
+            width: 100%;
+            outline: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: .4rem;
+            &:focus{
+                border: 2px solid $color-primary;
+            }
+            &::placeholder{
+                text-transform: capitalize;
+            }
+
+        }
+    }
+
+}

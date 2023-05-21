@@ -1,0 +1,50 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.comments{
+    margin-top: 2rem;
+    &:last-child{
+        margin-bottom: 2rem;
+    }
+    &-content{
+        gap: 2rem;
+        .profile-picture{
+            height: 3.5rem;
+            width: 3.5rem;
+            background-color: $color-grey-dark;
+            overflow: hidden;
+            border-radius: 100%;
+        }
+        &--info{
+            gap: .5rem;
+            & > span{
+                text-transform: capitalize;
+                cursor: pointer;
+            }
+            .username{
+                font-weight: bold;
+            }
+            .text{
+                color: $color-grey;
+            }
+
+            .actions{
+                gap: 2.5rem;
+                & > span{
+                    text-transform: capitalize;
+                    color: $color-primary;
+                }
+                .time{
+                    text-transform: lowercase;
+                    color: $color-grey;
+                }
+            }
+
+        }
+    }
+}
