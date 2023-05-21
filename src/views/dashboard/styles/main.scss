@@ -1,0 +1,19 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.body-container{
+    & > div{
+        gap: 2rem;
+    }
+    &--side{
+
+    }
+    &--main{
+
+    }
+}

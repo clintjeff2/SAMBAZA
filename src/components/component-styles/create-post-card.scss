@@ -1,0 +1,37 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.create-content{
+    padding: 2rem;
+    form{
+        gap: 2.5rem;
+        border-bottom: .001rem solid lighten($color-grey, 25%);
+        width: 100%;
+        padding-bottom: 2rem;
+        .create-content--text{
+            width: 90%;
+            display: inline-block;
+            padding: .5rem;
+            border: none;
+            outline: none;
+            &::placeholder{
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: .2rem;
+                font-size: 1.4rem;
+                color: $color-grey;
+            }
+        }
+        .profile-picture{
+            width: 7rem;
+            height: 7rem;
+            border-radius: 100%;
+            background-color: $color-grey-dark;
+        }
+    }
+
+}
