@@ -1,0 +1,31 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+
+.container{
+    .header{
+        height: 8.6rem;
+    }
+    section.main{
+        position: relative;
+        section.body{
+            // border: 3px hidden blue;
+            border: 3px solid rgba($color-grey-dark, .6);
+            transition: all .4s ease-in;
+            background-color: rgba($color-grey-dark, .6);
+            // position: absolute;
+            // left: 50.35%;
+            // transform: translateX(-50%);
+            margin: 0rem 23rem 0rem 24rem;
+            // width: 69.9%;
+            z-index: -1;
+            min-height: 100rem;
+        }
+        section.body--toggle{
+            margin: 0 23rem 0rem 8rem;
+        }
+    }
+}

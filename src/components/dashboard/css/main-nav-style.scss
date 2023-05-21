@@ -1,0 +1,84 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+
+header{
+    align-items: center;
+    width: 100%;
+    // border: 1px solid red;
+    gap: 2rem;
+    & .main-header--item{
+        // border: 1px solid black;
+        font-size: 2rem;
+        align-items: center;
+    }
+    .media{
+        gap: 1.5rem;
+        &--logo{
+            height: 5rem;
+            width: 5rem;
+            background-color: $color-grey-dark;
+            border-radius: .5rem;
+        }
+        &--name{
+            font-size: 2.5rem;
+            color: #61b0ff;
+            text-transform: uppercase;
+            // border: 1px solid blue;
+
+        }
+        
+    }
+    & .left-nav--toggle{
+        cursor: pointer;
+    }
+    & .search{
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        .search--input{
+            width: 45rem;
+            padding: 1rem;
+            font-size: 1.6rem;
+            color: $color-grey;
+            background-color: $color-primary-light;
+            border-radius: .5rem;
+            outline: none;
+            border: none;
+        }
+        form{
+            align-items: center;
+            position: relative;
+            // border: 1px solid red;
+            & .icon-blue{
+                position: absolute;
+                right: 1rem;
+            }
+        }
+    }
+    .user{
+        align-items: center;
+        gap: .5rem;
+        border: 1px solid red;
+        &--name{
+            font-size: 1.4rem;
+            width: 13rem;
+        }
+        &--profile{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 100%;
+            background-color: $color-grey-dark;
+        }
+    }
+    .icon-blue{
+        color: $color-primary;
+        font-size: 2.5rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
