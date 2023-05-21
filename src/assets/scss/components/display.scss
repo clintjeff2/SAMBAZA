@@ -1,8 +1,29 @@
 .flex{
     display: flex;
-}
+    &-width--sm{
+        width: 10%;
+    }
+    &-width--md{
+        width: 30%;
+    }
+    &-width--lg{
+        width: 68.5%;
+    }
+    &-width--xl{
+        width: 80%;
+    }
 
+}
 .flex-col{
     display: flex;
     flex-direction: column;
+}
+.justify{
+    justify-content: center;
+}
+.justify--between{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
 }

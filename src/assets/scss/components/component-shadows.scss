@@ -56,10 +56,16 @@ $bg-white: #fffffe;
     box-shadow: 1px 1px 5px #21212155 inset;
 }
 .content{
-    background-color: $bg-white;
-    box-shadow: 1px 1px 10px #21212155;
+    
+    // box-shadow: 1px 1px 10px #21212155;
     border-radius: .5rem;
-    padding: 1.5rem;
+    // overflow: hidden;
+    // padding: 1.5rem;
+    & > div > *{
+        border-radius: .5rem;
+        background-color: $bg-white;
+        box-shadow: 1px 1px 10px #21212155;
+    }
     &-s{
         margin: 1rem 4rem;
     }
