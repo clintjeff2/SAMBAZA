@@ -1,0 +1,27 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.pic-card{
+    padding: 0rem 0rem 0rem 0rem;
+    // margin-top: 2rem;
+    & .picture{
+        height: 17rem;
+        width: 100%;
+        border-radius: .5rem;
+        background-color: $color-grey-dark;
+    }
+
+}
+.pic-line{
+    margin: 0rem 2rem;
+    padding-bottom: 1rem;
+    &:not(:last-child){
+        border-bottom: .1rem solid lighten($color-grey, 25%);
+        
+    }
+}

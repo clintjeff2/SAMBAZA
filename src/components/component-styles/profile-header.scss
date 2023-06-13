@@ -1,0 +1,117 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.profile-picture--background{
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    .background{
+        height: 100%;
+        width: 100%;
+    }
+    // .upload-pictures{
+    //     .upload-background{
+    //         // border: 1px solid blue;
+    //         position: absolute;
+    //         top: 2rem;
+    //         right: 2rem;
+    //         .upload-content{
+    //             background-color: white;
+    //             height: 4rem;
+    //             width: 4rem;
+    //             border-radius: 100%;
+    //             position: relative;
+    //             justify-content: center;
+    //             align-items: center;
+    //             overflow: hidden;
+    //             #profile-background{
+    //                 height: 100%;
+    //                 position:absolute;
+    //                 color: rgba(0, 0, 0, 0);
+    //                 z-index: 2;
+    //             }
+    //             span{
+    //                 position: absolute;
+    //                 font-size: 2rem;
+    //                 color: $color-grey;
+    //             }
+    //         }
+
+    //     }
+    //     .upload-profile{
+    //         border: 1px solid red;
+    //         position: absolute;
+    //         .upload-content{
+    //             height: 15rem;
+    //             width: 15rem;
+    //             border-radius: 100%;
+    //             position: relative;
+    //             background-color: $bg-white;
+    //             justify-content: center;
+    //             align-items: center;
+    //             overflow: hidden;
+    //             #profile-picture{
+    //                 height: 100%;
+    //                 width: 100%;
+    //                 position: absolute;
+    //                 color: rgba(0, 0, 0, 0);
+    //             }
+    //             span{
+    //                 position: absolute;
+    //                 height: 100%;
+    //             }
+
+    //         }
+    //     }
+    // }
+    .upload-pictures{
+        .upload-background{
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            height: 4rem;
+            width: 4rem;
+            border-radius: 100%;
+            background-color: $bg-white;
+
+            #profile-background{
+                // opacity: 0;
+                display: none;
+            }
+            .btn-camera{
+                font-size: 2rem;
+                cursor: pointer;
+                color: $color-grey;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+        .upload-profile{
+            position: absolute;
+            bottom: 0rem;
+            left: 2rem;
+            height: 17rem;
+            width: 17rem;
+            transform: translateY(30%);
+            // border: 1px solid blue;
+            overflow: hidden;
+            border-radius: 100%;
+            background-color: $bg-white;
+            #profile-picture{
+                display: none;
+            }
+            .picture{
+                height: 100%;
+                width: 100%;
+                padding: .4rem;
+                border-radius: 100%;
+            }
+        }
+    }
+}

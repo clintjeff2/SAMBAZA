@@ -1,0 +1,24 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+
+.profile--head{
+    .profile-body{
+        // padding-top: 7rem;
+        .edit-profile{
+            font-size: 2rem;
+            color: $color-grey;
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+}
+#profile-sections > div{
+    margin-top: 1.5rem;
+}

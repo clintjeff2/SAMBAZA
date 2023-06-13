@@ -9,10 +9,7 @@ import CardHeader from '../../../components/CardHeader';
 //importing ICONS
 import { BsFillPencilFill } from 'react-icons/bs';
 
-//Importing STYLES
-import './../styles/user-profile.scss';
-import './../../../assets/scss/components/component-shadows.scss';
-function UserProfile() {
+function PeopleProfile() {
   return (
     <DefaultStructure>
       <Card class="content-ns">
@@ -67,4 +64,4 @@ function UserProfile() {
   )
 }
 
-export default UserProfile;
+export default PeopleProfile

@@ -1,0 +1,49 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.friend-card{
+    background-color: $bg-white;
+    // &--head{
+    //     padding-top: 0rem !important;
+    // }
+    .description{
+        // border: 1px solid blue;
+        gap: 3rem;
+        margin-left: 2rem;
+        .profile-picture{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 100%;
+            background-color: $color-grey;
+            transform: translateY(-100%);
+            margin-top: 4rem;
+
+            img{
+
+            }
+        }
+        .profile-info{
+            gap: .8rem;
+            .name{
+                font-size: 2.5rem;
+                color: $color-primary;
+            }
+            .passion{
+                font-weight: bold;
+                font-family: cursive;
+            }
+            .content{
+                color: $color-grey;
+            }
+        }
+    }
+    .following{
+        margin: 2rem 0rem 0rem 2rem;
+        padding-bottom: 2rem;
+    }
+}

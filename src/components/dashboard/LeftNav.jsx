@@ -41,7 +41,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/friend-profile' className='item-link'>
+          <NavLink to='/dashboard/people-profile' className='item-link'>
             <div className="nav-item flex">
               <GameIcon.GiThreeFriends className='nav-item--icon'/>
               <span className="nav-item--name">Friend Profile</span>
@@ -49,7 +49,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/default' className='item-link'>
+          <NavLink to='/dashboard/groups' className='item-link'>
             <div className="nav-item flex">
               <HeroIcons.HiOutlineUserGroup className='nav-item--icon'/>
               <span className="nav-item--name">Groups</span>
@@ -57,7 +57,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/profile-images' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsCardImage className='nav-item--icon'/>
               <span className="nav-item--name">Profile Images</span>
@@ -65,7 +65,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/videos' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsCameraVideo className='nav-item--icon'/>
               <span className="nav-item--name">Profile Video</span>

@@ -9,7 +9,7 @@ function CreatePostCard() {
   return (
     <div>
         <CardHeader title="create post">
-            post
+            ...
         </CardHeader>
         <div className="create-content">
             <form action="" className='flex'>
