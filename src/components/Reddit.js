@@ -8,7 +8,7 @@ function Reddit(props) {
         <div className="profile-picture">
             <img src="" alt="" />
         </div>
-        <div className="profile-info flex-col">
+        <div className="profile-info flex-col justify">
             <span className="name">
                 {props.name}
             </span>

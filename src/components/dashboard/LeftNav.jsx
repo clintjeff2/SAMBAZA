@@ -73,7 +73,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/events' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsCalendar3Event className='nav-item--icon'/>
               <span className="nav-item--name">Events</span>
@@ -81,7 +81,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/notifications' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsBell className='nav-item--icon'/>
               <span className="nav-item--name">Notifications</span>
@@ -89,13 +89,13 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/files' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsFileEarmark className='nav-item--icon'/>
               <span className="nav-item--name">Files</span>
             </div>
           </NavLink>
-        </li>        
+        </li>
         <li className='left-navigation--list-item'>
           <NavLink to='/dashboard/' className='item-link'>
             <div className="nav-item flex">
