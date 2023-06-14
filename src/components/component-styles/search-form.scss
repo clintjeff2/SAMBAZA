@@ -1,0 +1,33 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.search-form{
+    .form{
+        border: 1px solid $color-primary;
+        input{
+            padding: 1rem;
+            font-size: 2rem;
+            border: none;
+            outline: none;
+            background-color: $bg-white;
+
+            &::placeholder{
+                color: $color-primary;
+                font-size: 1.6rem;
+            }
+
+        }
+        button{
+            font-size: 1.8rem;
+            padding: 1rem;
+            background-color: $bg-white;
+            color: $color-primary;
+            border: none;
+        }
+    }
+}

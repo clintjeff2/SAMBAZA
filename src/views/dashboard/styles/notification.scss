@@ -1,0 +1,43 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+$color-green-light: #02500242;
+$color-red-light: #ff000042;
+
+.notifications{
+    & > *{
+        margin-top: 3rem;
+    }
+    .reddit{
+        padding: 0rem !important;
+        margin: 0rem !important;
+    }
+    .acts{
+        gap: 2rem;
+        & > *{
+            border-radius: .5rem;
+        }
+        .type{
+            padding: .5rem 1rem;
+            font-size: 2rem;
+            background-color: $color-grey-light;
+        }
+        .comment{
+            color: $color-primary;
+            background-color: $color-primary-light;
+        }
+        .share, .emoji{
+            color: #ff0000;
+            background-color: $color-red-light;
+        }
+        .event, .like{
+            color: #008000;
+            background-color: $color-green-light;
+        }
+    }
+}

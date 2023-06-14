@@ -1,0 +1,30 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+$color-green-light: #02500242;
+$color-red-light: #ff000042;
+
+.files{
+    .headers{
+        .card-header{
+            &:nth-child(2){
+                border-bottom: none !important;
+            }
+            
+            .actions{
+                gap: 1rem;
+                & > *{
+                    border-radius: .5rem;
+                    font-weight: 300 !important;
+                    padding: 1rem;
+                    background-color: $color-primary-light;
+                }
+            }
+        }
+    }
+}
