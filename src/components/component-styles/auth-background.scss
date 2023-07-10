@@ -1,0 +1,221 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.auth-background{
+    // border: 1px solid black;
+    height: 100vh;
+    width: 100vh;
+    .xlarge,
+    .large,
+    .medium,
+    .small{
+        animation-iteration-count: infinite;
+        border-radius: 100%;
+        box-shadow: .3rem .3rem 5rem darken($color-primary, 10%);
+    }
+    .xlarge{
+        height: 92vh;
+        width: 92vh;
+        // border: 2px solid blue;
+        background-color: darken($color-primary, 15%);
+        animation-name: authBackground;
+        animation-duration: 15s;
+        @keyframes authBackground{
+            10%{
+                height: 94vh;
+                width: 94vh;
+            }
+            20%{
+                height: 96vh;
+                width: 96vh;
+            }
+            30%{
+                height: 98vh;
+                width: 98vh;
+            }
+            40%{
+                height: 99vh;
+                width: 99vh;
+            }
+            50%{
+                height: 100vh;
+                width: 100vh;
+            }
+            60%{
+                height: 99vh;
+                width: 99vh;
+            }
+            70%{
+                height: 98vh;
+                width: 98vh;
+            }
+            80%{
+                height: 96vh;
+                width: 96vh;
+            }
+            90%{
+                height: 95vh;
+                width: 95vh;
+            }
+            100%{
+                height: 94.5vh;
+                width: 94.5vh;
+            }
+        }
+        .large{
+            height: 70vh;
+            width: 70vh;
+            // border: 2px solid green;
+            background-color: $color-primary;
+            animation-name: authBackground1;
+            animation-duration: 15s;
+            @keyframes authBackground1{
+                10%{
+                    height: 72vh;
+                    width: 72vh;
+                }
+                20%{
+                    height: 73vh;
+                    width: 73vh;
+                }
+                30%{
+                    height: 74vh;
+                    width: 74vh;
+                }
+                40%{
+                    height: 75vh;
+                    width: 75vh;
+                }
+                50%{
+                    height: 75.5vh;
+                    width: 75.5vh;
+                }
+                60%{
+                    height: 75vh;
+                    width: 75vh;
+                }
+                70%{
+                    height: 74vh;
+                    width: 74vh;
+                }
+                80%{
+                    height: 73vh;
+                    width: 73vh;
+                }
+                90%{
+                    height: 72.5vh;
+                    width: 72.5vh;
+                }
+                100%{
+                    height: 72.1vh;
+                    width: 72.1vh;
+                }
+            }
+            .medium{
+                height: 45vh;
+                width: 45vh;
+                // border: 2px solid red;
+                background-color: lighten($color-primary, 10%);
+                animation-name: authBackground2;
+                animation-duration: 15s;
+                @keyframes authBackground2{
+                    10%{
+                        height: 46vh;
+                        width: 46vh;
+                    }
+                    20%{
+                        height: 47.5vh;
+                        width: 47.5vh;
+                    }
+                    30%{
+                        height: 48vh;
+                        width:48vh;
+                    }
+                    40%{
+                        height: 48.5vh;
+                        width: 48.5vh;
+                    }
+                    50%{
+                        height: 49vh;
+                        width: 49vh;
+                    }
+                    60%{
+                        height: 48.5vh;
+                        width: 48.5vh;
+                    }
+                    70%{
+                        height: 48vh;
+                        width: 48vh;
+                    }
+                    80%{
+                        height: 47.5vh;
+                        width:47.5vh;
+                    }
+                    90%{
+                        height: 47vh;
+                        width: 47vh;
+                    }
+                    100%{
+                        height: 46.5vh;
+                        width: 46.5vh;
+                    }
+                }
+                .small{
+                    height: 20vh;
+                    width: 20vh;
+                    // border: 2px solid green;
+                    background-color: lighten($color-primary, 15%);
+                    animation-name: authBackground3;
+                    animation-duration: 15s;
+                    @keyframes authBackground3{
+                        10%{
+                            height: 21.5vh;
+                            width: 21.5vh;
+                        }
+                        20%{
+                            height: 22vh;
+                            width: 22vh;
+                        }
+                        30%{
+                            height: 22.5vh;
+                            width: 22.5vh;
+                        }
+                        40%{
+                            height: 23vh;
+                            width: 23vh;
+                        }
+                        50%{
+                            height: 23.5vh;
+                            width: 23.5vh;
+                        }
+                        60%{
+                            height: 23vh;
+                            width: 23vh;
+                        }
+                        70%{
+                            height: 22.5vh;
+                            width: 22.5vh;
+                        }
+                        80%{
+                            height: 22vh;
+                            width: 22vh;
+                        }
+                        90%{
+                            height: 21.5vh;
+                            width: 21.5vh;
+                        }
+                        100%{
+                            height: 21vh;
+                            width: 21vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

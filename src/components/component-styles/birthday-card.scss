@@ -1,0 +1,33 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.birthday-card{
+    // border: 1px solid blue;
+    padding: 2rem;
+    .picture{
+        overflow: hidden;
+        height: 12rem;
+        width: 12rem;
+        border-radius: .7rem;
+        background-color: $color-grey-dark;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .birthday-info{
+        flex: 1;
+        .name{
+            font-size: 2.2rem;
+        }
+        .birthday{
+            color: $color-grey;
+        }
+
+    }
+}

@@ -1,0 +1,121 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.chats{
+    
+    &-contacts{
+        padding: 1rem;
+        height: 86.5vh;
+        border-radius: 0 !important;
+        overflow: auto;
+        input{
+            width: 80%;
+        }
+
+        .contact{
+            margin-top: 2rem;
+        }
+        &::-webkit-scrollbar{
+            width: .5rem;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 1rem;
+            background-color: $color-primary;
+        }
+        &::-webkit-scrollbar-track{
+            background-color: $color-grey-light;
+            
+        }
+    }
+    &-contact-info{
+        // display: none;
+        height: 86.5vh;
+        border-radius: 0 !important;
+        padding: 1rem 1rem 0rem 1rem;
+        // border: 2px solid green;
+        .card-header{
+            padding: 0;
+            padding-bottom: 1rem;
+            .gen-reddit{
+                padding: 0;
+                // padding-bottom: 2rem;
+            }
+        }
+        .actions{
+            & > span{
+                padding: 1rem 1.5rem;
+                border: .5rem;
+                font-size: 1.8rem;
+                background-color: $color-primary-light;
+                color: $color-primary;
+            }
+        }
+
+        .chat-content{
+            flex: 1;
+            margin: 0rem -1rem;
+            padding: 1rem;
+            max-height: 85%;
+            // border: 2px solid blue;
+            overflow: auto;
+            .sender-me{
+                align-self: flex-end;
+            }
+
+            &::-webkit-scrollbar{
+                width: .5rem;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: $color-primary;
+                border-radius: 1rem;
+            }
+            &::-webkit-scrollbar-track{
+                background-color: $color-grey-light;
+            }
+        }
+    }
+
+    &-contact-empty{
+        height: 86.5vh;
+        border-radius: 0 !important;
+        background-color: $color-grey !important;
+        position: relative;
+
+        display: none;
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .message-icon{
+                margin: 0 auto; //centers this due to the block below
+                background-color: $bg-white;
+                height: 10rem;
+                width: 10rem;
+                border-radius: 100%;
+                padding: 2rem;
+                // border: 1px solid blue;
+                text-align: center;
+                &--comment{
+                    box-shadow:none !important;
+                    font-size: 8rem;
+                    color: $color-primary;
+                }
+            }
+            .text{
+                background-color: $bg-white;
+                color: $color-primary;
+                padding: .6rem;
+                border-radius: .6rem;
+                margin-top: 3rem;
+                width: 30rem;
+                text-align: center;
+            }
+        }
+    }
+}

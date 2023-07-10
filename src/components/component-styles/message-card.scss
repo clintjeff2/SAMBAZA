@@ -1,0 +1,33 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.message-card{
+    background-color: $color-primary;
+    margin-bottom: 1.5rem;
+    // min-width: min-content;
+    width: fit-content;
+    max-width: 75%;
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
+    border-radius: 1rem;
+    color: $bg-white;
+
+    .time{
+        font-size: 1.2rem;
+        align-self: flex-end;
+        color: $color-grey;
+    }
+}
+
+.sender-other{
+    background-color: $color-grey-light;
+    color: $color-grey;
+
+    .time{
+        align-self: flex-start;
+    }
+}

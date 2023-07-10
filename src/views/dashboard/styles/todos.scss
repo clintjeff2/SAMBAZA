@@ -1,0 +1,81 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.todos{
+    .card-header{
+        button{
+            display: flex;
+            &>*{
+                display: block;
+            }
+        }
+    }
+    .todos-body{
+        margin-top: 3rem;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        .todos-task, .todos-actions{
+            border-radius: .5rem;
+            background-color: $bg-white;
+            box-shadow: 1px 1px 10px #21212155;
+            // border: 1px solid blue;
+            
+            .card-header{
+                padding: 0.5rem 1rem;
+                margin: 0;
+                border-bottom: 0;
+                .task-right{
+                    .state{
+                        font-size: 1.2rem;
+                        // background-color: #016d016d;
+                        padding: .5rem;
+                        color: $bg-white;
+                        font-weight: 200;
+                        border-radius: .3rem;
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    background-color: $color-primary-light;
+                }
+            }
+            input{
+                width: 85%;
+            }
+        }
+        .todos-actions{
+            align-self: flex-start;
+            padding: 1rem;
+            .actions-body{
+                margin-top: 2rem;
+                button{
+                    background-color: $bg-white;
+                    color: black;
+                    display: flex;
+                    &>*{
+                        display: block;
+                    }
+                }
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding-left: 2rem;
+                    li{
+                        // border: 1px solid blue;
+                        padding: 1rem;
+                        text-transform: capitalize;
+                        &:hover{
+                            background-color: $color-primary-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -22,9 +22,51 @@ $bg-white: #fffffe;
         width: 90%;
     }
     &:hover{
-        background-color: darken($color-primary, 20%);
+        background-color: darken($color-primary, 10%);
+    }
+
+    &-grey{
+        background-color: darken($color-grey, 20%);
+        &:hover{
+            background-color: lighten($color-grey, 5%);
+        }
+    }
+    &-green{
+        background-color: rgba(1, 109, 1, 0.428);
+        &:hover{
+            background-color: darken(rgba(1, 109, 1, 0.428), 5%);
+        }
+    }
+    &-red{
+        background-color: rgba(240, 1, 1, 0.428);
+        &:hover{
+            background-color: darken(rgba(240, 1, 1, 0.428), 5%);
+        }
+    }
+    &-primary{
+        background-color: $color-primary;
+        &:hover{
+            background-color: darken($color-primary, 10%);
+        }
+    }
+    &-primary-light{
+        background-color: lighten(#88bff598, 15%);
+        color: $color-primary;
+        &:hover{
+            background-color: lighten(#88bff598, 15%);
+        }
+    }
+    &-purple{
+        background-color: #e40ae4;
+        &:hover{
+            background-color: rgba(#e40ae4, 40%);
+        }
     }
     
+}
+.primary-header{
+    font-size: 4rem;
+    text-transform: capitalize;
 }
 
 .mg-bt-sm{

@@ -1,0 +1,31 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.gen-reddit{
+    // border: 1px solid  blue;
+    padding: 1rem;
+    .picture{
+        height: 4rem;
+        width: 4rem;
+        border-radius: .5rem;
+        background-color: $color-grey-dark;
+    }
+    .info{
+        .title{
+            text-transform: capitalize;
+            font-size: 1.8rem;
+        }
+        .message{
+            font-size: 1.2rem;
+            color: $color-grey;
+        }
+    }
+    &:not(:last-child){
+        border-bottom: .001rem solid lighten($color-grey, 25%);;
+    }
+}

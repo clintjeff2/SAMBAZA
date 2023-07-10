@@ -1,0 +1,32 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.error-404{
+    margin-top: 4rem;
+    .logo-pic{
+        height: 30rem;
+        width: 40rem;
+        border-radius: .4rem;
+        background-color: $color-grey-dark;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .text{
+        color:$color-grey;
+    }
+    .link{
+        text-decoration: none;
+        margin-top: 3rem;
+        button{
+            display: flex;
+        }
+    }
+}

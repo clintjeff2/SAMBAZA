@@ -1,0 +1,49 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.email-compose{
+    div{
+        .card-header{
+            font-weight: bold;
+            color: $color-primary;
+        }
+        .email-form{
+            padding: 2rem;
+            div{
+                margin: 1rem 0rem;
+                // border: 1px solid red !important;
+                & span{
+                    color: $color-grey;
+                    width: 20%;
+                    // border: 1px solid green;
+                    font-size: 1.8rem;
+                }
+                input, textarea{
+                    flex: 1;
+                    border: 1px solid $color-grey;
+                    outline: none;
+                    font-size: 1.6rem;
+                    padding: .5rem;
+                    border-radius: .3rem;
+                }
+                input[type=file]{
+                    display: none;
+                }
+                button.btn-primary-light{
+                    background-color: darken($color-grey-light, 5%) !important;
+                    color: $color-primary !important;
+                }
+            }
+            div.message{
+                & span{
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}

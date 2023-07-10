@@ -10,6 +10,7 @@ import * as BootStrapIcon from 'react-icons/bs';
 import * as IonIcon5 from 'react-icons/io5';
 import * as GameIcon from 'react-icons/gi';
 import * as HeroIcons from "react-icons/hi2";
+import { FaQuestion } from 'react-icons/fa';
 
 function LeftNav() {
 
@@ -97,7 +98,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/tutor-request' className='item-link'>
             <div className="nav-item flex">
               <IonIcon5.IoGitPullRequestOutline className='nav-item--icon'/>
               <span className="nav-item--name">Tutor Request</span>
@@ -105,7 +106,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/chats' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsChatDots className='nav-item--icon'/>
               <span className="nav-item--name">Chats</span>
@@ -113,7 +114,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/todos' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsCalendarCheck className='nav-item--icon'/>
               <span className="nav-item--name">Todos</span>
@@ -121,7 +122,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/birthdays' className='item-link'>
             <div className="nav-item flex">
               <GameIcon.GiStairsCake className='nav-item--icon'/>
               <span className="nav-item--name">Birthdays</span>
@@ -129,7 +130,7 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/calendar' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsCalendar className='nav-item--icon'/>
               <span className="nav-item--name">Calendar</span>
@@ -137,10 +138,18 @@ function LeftNav() {
           </NavLink>
         </li>
         <li className='left-navigation--list-item'>
-          <NavLink to='/dashboard/' className='item-link'>
+          <NavLink to='/dashboard/emails' className='item-link'>
             <div className="nav-item flex">
               <BootStrapIcon.BsEnvelope className='nav-item--icon'/>
               <span className="nav-item--name">Emails</span>
+            </div>
+          </NavLink>
+        </li>
+        <li className='left-navigation--list-item'>
+          <NavLink to='/dashboard/faq' className='item-link'>
+            <div className="nav-item flex">
+              <FaQuestion className='nav-item--icon'/>
+              <span className="nav-item--name">FAQ</span>
             </div>
           </NavLink>
         </li>

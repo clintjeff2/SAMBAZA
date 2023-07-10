@@ -3,11 +3,17 @@
     &-width--sm{
         width: 10%;
     }
+    &-width--sm-md{
+        width: 25%
+    }
     &-width--md{
         width: 30%;
     }
     &-width--lg{
         width: 68.5%;
+    }
+    &-width--sm-xl{
+        width: 75%;
     }
     &-width--xl{
         width: 80%;
@@ -26,4 +32,15 @@
 }
 .align{
     align-items: center;
+}
+
+//for space
+.gap-3{
+    gap: 3rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.gap-1{
+    gap: 1rem;
 }

@@ -1,0 +1,133 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.sign-in,
+.sign-up,
+.recover-password,
+.reset-password,
+.confirm-mail,
+.lock-screen{
+    background-color: darken(#52a7fc, 15%);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    .link{
+        text-decoration: none;
+        color: $color-primary;
+        text-transform: capitalize;
+        padding-left: .5rem;
+    }
+    .auth-background{
+        position: absolute;
+        left: 0;
+    }
+    .sign-in--content,
+    .sign-up--content{
+        position: absolute;
+        width: 35vw;
+        border: 1px solid red;
+        height: 100vh;
+        background-color: $bg-white;
+        right: 30rem;
+        padding: 4rem;
+
+        h1{
+            // font-size: 3.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        span{
+            color: $color-grey;
+        }
+        .email,
+        .name{
+            margin-top: 5rem;
+            & > *{
+                display: block;
+            }
+        }
+        .password{
+            margin-top: 2rem;
+            div{
+                .text{
+                    flex: 1;
+                }
+                .link{
+                    color: $color-primary;
+                    text-decoration: none;
+                }
+            }
+        }
+        .submit{
+            margin-top: 2rem;
+            border-bottom: 1px solid $color-grey-dark;
+            padding-bottom: 4rem;
+            .checkbox{
+                flex: 1;
+
+            }
+        }
+        .no-account{
+            margin-top: 3rem;
+            &--signup{
+                flex: 1;
+
+            }
+            .social{
+
+                button.btn{
+                    padding: .5rem .8rem;
+                }
+            }
+        }
+        input{
+            padding: 1rem;
+            font-size: 1.6rem;
+            border: 1px solid $color-grey;
+            outline: none;
+            border-radius: .3rem;
+            color: $color-grey;
+        }
+    }
+}
+
+.sign-up--content{
+    .email{
+        margin-top: 2rem !important;
+    }
+}
+.reset-password{
+    .email{
+        margin-top: 5rem !important;
+    }
+
+    .btn{
+        margin-top: 3rem;
+    }
+}
+.recover-password{
+    .email{
+        margin-top: 5rem !important;
+    }
+
+    .btn{
+        margin-top: 3rem;
+    }
+}
+.confirm-mail{
+    .button-link{
+        display: block;
+        text-decoration: none;
+        margin-top: 4rem !important;
+    }
+}
+.lock-screen{
+    .btn{
+        margin-top: 4rem;
+    }
+}

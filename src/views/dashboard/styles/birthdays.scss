@@ -1,0 +1,35 @@
+$color-primary: #61b0ff;
+$color-primary-light: #e6edf5;
+
+$color-grey-dark: #e6e3e3;
+$color-grey-light: #f6f6f6;
+$color-grey: #808080;
+$bg-white: #fffffe;
+
+.birthdays{
+    &-today, &-months{
+        border-radius: 0 !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        & > *{
+            border-radius: .5rem;
+            background-color: $color-grey-light;
+            box-shadow: 1px 1px 10px #21212155;
+        }
+        .people{
+            flex-wrap: wrap;
+            margin: 2rem 0rem;
+            border-radius: 0 !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            & > *{
+                border-radius: .5rem;
+                background-color: $color-grey-light;
+                box-shadow: 1px 1px 10px #21212155;
+            }
+            .birthday-card{
+                width: 49%;
+            }
+        }
+    }
+}

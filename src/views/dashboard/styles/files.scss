@@ -27,4 +27,46 @@ $color-red-light: #ff000042;
             }
         }
     }
+    .table{
+        color: $color-grey;
+        padding: 0rem 1.5rem;
+        table{
+            // border: 1px solid black;
+            width: 100%;
+            border-collapse: collapse;
+            tr{
+                th{
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 2rem 0;
+                }
+                td{
+                    text-align: center;
+                    padding: 1rem 0rem;
+                    div{
+                        gap: 2rem;
+                        .picture{
+                            width: 4rem;
+                            border-radius: 100%;
+
+                        }
+                        .icon{
+                            color: $color-primary;
+                            &:hover{
+                                color:$color-grey;
+                            }
+                        }
+
+                    }
+                }
+                &:nth-child(even){
+                    background-color: $color-grey-light;
+                }
+                &:nth-child(odd){
+                    background-color: $bg-white;
+                }
+            }
+
+        }
+    }
 }
